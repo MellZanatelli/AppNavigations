@@ -1,10 +1,8 @@
 import React from "react"
 import { View, Text, Image, ImageBackground } from "react-native"
 import { styles } from "./styles"
-import { Pontinhos } from '../../components/pontinhos'
 import { Fundo } from '../../components/fundo'
 import {Scontainer} from '../../styles/globalstyle'
-import {Pontos} from '../../styles/globalstyle'
 
 export function Tela2() {
 

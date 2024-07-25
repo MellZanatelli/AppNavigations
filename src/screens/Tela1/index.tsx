@@ -2,9 +2,8 @@
 import { View, Text, Image, TouchableOpacity} from "react-native";
 import { Fundo } from '../../components/fundo';
 import { styles } from "./styles";
-import {Scontainer} from '../../styles/globalstyle';
-import {Pontos} from '../../styles/globalstyle';
-import { MenuStackTypes } from "../../Navigation/MenuStack.navigation";
+import { Scontainer } from '../../styles/globalstyle';
+import { MenuStackTypes } from "../../navigation/MenuStack.navigation";
 
 export function Tela1 ({navigation}: MenuStackTypes){
 
