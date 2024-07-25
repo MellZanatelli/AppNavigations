@@ -1,9 +1,9 @@
 import { StackNavigationProp, createStackNavigator } from "@react-navigation/stack";
-import { Tela1, Tela2 } from '../screens';
+import { Login, Cadastrar } from '../screens';
 
 type MenuStackParam = {
-    pag1: undefined
-    pag2: undefined
+    Login: undefined
+    Cadastrar: undefined
 }
 
 type MenuScreenNavigation = StackNavigationProp<MenuStackParam, "pag1">
@@ -15,12 +15,13 @@ export type MenuStackTypes = {
 export function MenuStack(){
     const Stack = createStackNavigator<MenuStackParam>();
     return (
-        <Stack.Navigator screenOptions={{
+        <Stack.Navigator id='Login' screenOptions={{
             animationEnabled: true,
-            gestureEnabled: true
+            gestureEnabled: true,
+            headerShown: false
         }}>
-            <Stack.Screen name = 'pag1' component = {Tela1} />
-            <Stack.Screen name = 'pag2' component = {Tela2} />
+            <Stack.Screen name = 'Login' component = {Login} />
+            <Stack.Screen name = 'Cadastrar' component = {Cadastrar} />
         </Stack.Navigator>
     )
 }
